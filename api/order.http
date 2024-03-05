@@ -1,0 +1,17 @@
+### Create order
+# @name create_order
+
+POST http://localhost:8000/order HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "rest1",
+  "price": 5,
+  "tax": 5
+}
+
+### Read orders
+# @name read_orders
+
+GET http://localhost:8000/order HTTP/1.1
+Content-Type: application/json
