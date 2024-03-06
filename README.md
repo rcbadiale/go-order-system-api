@@ -14,13 +14,17 @@ basta executar o Docker Compose.
 docker compose up
 ```
 
-Ao executar dessa maneira as dependências abaixo serão criadas nas portas:
+Ao executar dessa maneira as dependências abaixo serão criadas nas portas em
+conjunto com a aplicação:
 
 - MySQL: 3306
 - RabbitMQ: 5672 e 15672
 
 **Obs.**: O MySQL tem seu volume montado na pasta `.docker/mysql` na raíz do
 projeto.
+
+**Obs.**: A aplicação faz a migração do banco de dados de forma automática caso
+seja necessário.
 
 ## Utilização das interfaces
 
